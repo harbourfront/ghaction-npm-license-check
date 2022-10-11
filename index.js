@@ -5,7 +5,7 @@ const productionOnly = core.getInput("production-only") === "true"
 
 try {
 	checker.init({
-		start: '/codebase',
+		start: 'codebase/',
 		excludePrivatePackages,
 		production: productionOnly,
 		summary: true
