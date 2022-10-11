@@ -12,10 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Check NPM packages licenses
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: harbourfront/ghaction-npm-license-check@v1
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-         path: '/codebase'
+         path: 'codebase/'
+      - name: Run checker
+        uses: harbourfront/ghaction-npm-license-check@v1
