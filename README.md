@@ -1,0 +1,2 @@
+# ghaction-npm-license-check
+ 
