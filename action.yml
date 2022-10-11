@@ -1,0 +1,12 @@
+name: 'Check NPM for Permissive License'
+description: 'Ensure that package.json only depends on permissive licenses'
+inputs:
+  exclude-private-packages:
+    description: 'Whether private packages should be excluded'
+    required: false
+  production-only:
+    description: 'Whether to only check production dependencies'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

@@ -1,0 +1,14 @@
+{
+  "name": "ghaction-npm-license-check",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:harbourfront/ghaction-npm-license-check.git",
+  "author": "Dylan Kok <me@dylankjy.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "license-checker-rseidelsohn": "^3.1.0",
+    "yui-lint": "^0.2.0"
+  }
+}

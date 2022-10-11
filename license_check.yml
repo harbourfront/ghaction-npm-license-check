@@ -1,0 +1,21 @@
+name: Check dependency licenses
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ develop ]
+
+jobs:
+  Check:
+    runs-on: ubuntu-latest
+    name: Check NPM packages licenses
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: harbourfront/ghaction-npm-license-check@v1
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+         path: '/codebase'
